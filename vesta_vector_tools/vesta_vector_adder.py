@@ -152,7 +152,7 @@ def main():
         raise ValueError("Need to specify the vectors to add, either through vasp magmom string (--magmom) or vector file (--vector_file)")
     elif vector_file:
         print('read in vector file')
-        vec_array = np.loadtxt('vec_file')
+        vec_array = np.loadtxt(vector_file)
     elif magmom_str:
         print('magmom string specified')
         vec_array = parse_magmom_string(magmom_str, natoms, sqa=sqa)
