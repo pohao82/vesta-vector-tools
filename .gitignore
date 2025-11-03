@@ -1,0 +1,10 @@
+# Python artifacts
+*.pyc
+__pycache__
+*.pyd
+
+*.egg-info/
+.eggs/
+*.dist-info/
+
+backup/
