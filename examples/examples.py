@@ -23,12 +23,12 @@ generate_vesta_with_vectors(input_vesta_file, scale*magmom_array, rgb_color=(100
 input_vesta_file2 = "V2Se2O/V2Se2O.vesta"
 magmom_str = '2 -2 2 -2 6*0.0'
 natoms = 10 
-scale =0.6
+scale =1.6
 # converting collinear magmom to 3D vectors, default spin axis = z (sqa=2) 
 magmom_array = parse_magmom_string(magmom_str, natoms)
 generate_vesta_with_vectors(input_vesta_file2, scale*magmom_array, rgb_color=(0,0,255), arrow_width=1.2, center_arrow=True, output_filename="v2se2o_vec_z.vesta")
 
 # switch spin axis to x (sqa=0)
 magmom_array = parse_magmom_string(magmom_str, natoms, sqa=0) 
-generate_vesta_with_vectors(input_vesta_file2, scale*magmom_array, rgb_color=(255,0,0), arrow_width=1.2, center_arrow=True, output_filename="v2se2o_vec_x.vesta")
+generate_vesta_with_vectors(input_vesta_file2, scale*magmom_array, rgb_color=(255,0,0), arrow_width=1.2, center_arrow=False, output_filename="v2se2o_vec_x.vesta")
 

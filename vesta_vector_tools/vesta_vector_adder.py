@@ -30,7 +30,7 @@ def generate_vesta_with_vectors(input_vesta, vectors_array, rgb_color=(0,0,255),
         x, y, z = vector
         # The VECTR line format is: index label 
         vector_line = (
-            f"  {index} {x:12.6f} {y:12.6f} {z:12.6f} \n"
+            f"  {index} {x:12.6f} {y:12.6f} {z:12.6f}  0\n"
             f"     {index} 0  0  0  0 \n"
             " 0 0 0 0 0\n"
         )

@@ -4,8 +4,6 @@ A simple Python package for easily adding magnetic moment vectors (parsed from V
 
 ## 🚀 Installation
 
-This package requires **NumPy**. It is recommended to install it in a dedicated virtual environment.
-
 1.  **Clone the repository:**
     ```bash
     git clone https://github.com/pohao82/vesta-vector-tools.git
